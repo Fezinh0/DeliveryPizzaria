@@ -1,0 +1,779 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+:root {
+    --vermelho: #c30909;
+    --preto: #000;
+    --branco: #fff;
+    --verde: rgba(10, 83, 21, 0.9);
+    --rosac:  #d1282850;
+    --cinzaG:  rgba(44, 42, 42, 0.785);
+    --brancoeee:  #eee;
+    --cinza66: #666;
+    --brancoddd:  #ddd;
+    --brancoccc: #ccc;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+figure {
+    margin: 0;
+    padding: 0;
+    font-family: Dancing Script;
+}
+
+img {
+    max-width: 100%;
+}
+
+#topo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--verde);
+    border-bottom: solid 1px;
+    text-align: center;
+}
+
+h1 img {
+    margin: 5px 0 5px 0;
+    width: 50px;
+}
+
+/* menu */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color: var(--branco);
+    transition: background-color 1s;
+    min-height: inherit;
+    padding: 15px;
+    width: 20%;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var();
+    color: var(--preto);
+    transition: background-color 1s;
+    border-radius: 5%;
+}
+
+nav img {
+    width: 30px;
+}
+
+/* Rodape */
+.rodape {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--verde);
+    color: var(--branco);
+    text-align: center;
+    width: 100%;
+}
+
+.rodape img {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.rodapeC ul {
+    list-style: none;
+}
+
+#logo-rodape {
+    margin: 10px;
+    min-width: 80px;
+    width: 50px;
+}
+
+.menu-rodape a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.menu-rodape a:link {
+    color: var(--branco);
+}
+
+.enderecoNot {
+   font-size: small;
+   color: var(--branco);
+}
+
+.assinatura {
+    margin: 20px 0px 0px 0px;
+    color: var(--branco);
+    text-align: center;
+    height: 50px;
+}
+/* --- */
+.formBox {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--verde);
+    color: var(--branco);
+    font-size: large;
+    font-weight: 500;
+    padding: 25px;
+    width: 250px;
+    border-radius: 15px;
+}
+
+.box input {
+    padding: 8px;
+    border-radius: 5px
+}
+
+/* Página principal */
+#conteudo {
+    max-width: 100%;
+    margin: auto;
+}
+
+#Pcards  {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+}
+
+.ccf {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: cursive;
+    font-size: 19pt;
+    gap: 15px;
+}
+
+.ccf img {
+    width: 250px;
+    border-radius: 5px;
+}
+
+.cardmini {
+    box-shadow: gray 1px 1px 5px;
+    border-radius: 5px;
+    font-family: Dancing Script;
+}
+
+.redirectBt {
+    margin: 0px 0px 5px 0px;
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Pacifico;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.redirectBt:hover {
+    background-color: var(--preto);
+    color: var(--branco);
+    transition: background-color 1s;
+}
+
+.redirectBt a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.redirectBt:hover {
+    background: var(--vermelho);
+    transition: 0.5s;
+    color: var(--branco);
+}
+
+.boxLogADM {
+    background-color: var(--verde);
+    border-radius: 15px;
+}
+.align {
+    margin: 15px 0 10px 0;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.align2 {
+    margin: 15px 0 10px 0;
+    display:flex ;
+    justify-content: right;
+    align-items: right;
+}
+/* --- */
+
+
+/* Página Cardapio */
+#card_cardapio {
+    margin: 30px 0px 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.InfoCardapio {
+    font-family: Dancing Script;
+    font-weight: bold;
+    font-size: 24pt;
+    color: var(--preto);
+}
+
+/* Cards pizza */
+.info_cards {
+    text-align: center;
+    background-color: var(--branco);
+    border-radius: 5px;
+    box-shadow:  gray 1px 1px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    max-width: 300px;
+    height: 470px;
+}
+
+.info_cards img {
+    border-radius: 5px;
+    width: 100%;
+    object-fit: cover;
+    height: 220px;
+}
+
+.info_cards h3 {
+    font-size: 25pt;
+}
+/* -- fim das pizzas -- */
+
+
+/* Cards sobremesa */
+.info_cardsSobremesa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--rosac);
+    border-radius: 5px;
+    box-shadow: gray 1px 1px 5px;
+    max-width: 250px;
+    width: 250px;
+    height: 420px;
+}
+
+.info_cardsSobremesa img {
+    border-radius: 5px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.info_cardsSobremesa h3 {
+    font-size: 25pt;
+}
+/* -- fim das sobremesas -- */
+
+
+/* Cards Adcionais */
+
+.iiif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info_cardsAdcionais {
+    text-align: center;
+    background-color: var(--branco);
+    color: var(--preto);
+    border-radius: 5px;
+    padding: 1%;
+    box-shadow: gray 1px 1px 5px;
+    max-width: 250px;
+    width: 250px;
+}
+
+.info_cardsAdionais img {
+    border-radius: 5px;
+    width: 100%;
+    max-height: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+/* -- fim dos adcionais -- */
+
+
+/* Seção botões cards */
+.bt-carrinho {
+    background-color: var(--verde);
+    color: var(--branco);
+    width: 80px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px;
+}
+
+.carrinhoSelect {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bt-carrinho a:link {
+    color: var(--preto);
+    transition: background-color 0.5s;
+    min-height: inherit;
+    padding: 1px 8px;
+    text-decoration: none;
+}
+
+.btCardapio {
+    background: var(--verde);
+    color: var(--branco);
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 15pt;
+    cursor: pointer;
+    align-items: center;
+}
+
+.btCardapio:hover {
+    background: var(--vermelho);
+    transition: 0.5s;
+}
+
+.btCardapioS {
+        background: var(--vermelho);
+        color: var(--branco);
+        border: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 15pt;
+        cursor: pointer;
+        align-items: center;
+}
+
+.btCardapioS:hover {
+    background: var(--verde);
+    transition: 0.5s;
+}
+/* -- fim dos botões -- */
+
+
+/* Página Pedidos */
+#conteudo_carrinho {
+    padding: 0 30px;
+    width: 100%;
+}
+
+/* Titulo da página */
+.page-title {
+     font-size: 40px;
+     padding: 35px 0;
+     text-align: center;
+}
+
+/* Conteudo */
+.content {
+    margin: 0px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    gap: 15px;
+}
+
+section {
+    flex: 1;
+}
+
+#tabela_carrinho {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 3px solid var(--brancoeee);
+}
+
+tr:last-child {
+    border: (0);
+}
+
+td {
+    padding: 30px 0;
+}
+
+th {
+    text-align: left;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    color: var(--cinza66);
+}
+
+tbody {
+    width: 100%;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product img {
+    border-radius: 6px;
+    width: 30%;
+}
+
+.name {
+    margin-bottom: 10px;
+}
+
+#remove {
+    background: var(--brancoeee);
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 15pt;
+    cursor: pointer;
+    align-items: center;
+}
+
+span {
+    margin: 0 2px;
+}
+
+.qty {
+    background: var(--brancoeee);
+    display: inline-flex;
+    justify-content: space-around;
+    min-width: 60px;
+    height: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bt {
+    cursor: pointer;
+    font-size: 10pt;
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 7px;
+}
+
+.bt:hover {
+    background: var(--brancoddd);
+}
+
+aside {
+    border-radius: 10px;
+    background: var(--brancoddd);
+    width: 250px;
+    margin-left: 30px;
+}
+
+aside button {
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    display: block;
+    background: var(--verde);
+    color: var(--branco);
+    font-size: 12pt;
+    font-weight: 550;
+}
+
+aside header {
+    padding: 15px;
+    font-size: 15pt;
+    border-bottom: 1px solid #ccc;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+select[readonly] option, select[readonly] optgroup {
+    display: none;
+}
+
+.info {
+    padding: 20px;
+    font-size: 16px;
+}
+
+aside footer {
+    border-radius: 5px;
+    padding: 15px;
+    background: #ccc;
+    font-size: 14pt;
+}
+
+.info div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+/* --- */
+
+
+/* Pagina Login e Cadastro */
+#conteudo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px 0px 10px 0px;
+}
+
+#Alogin, #Acadastro {
+    border-radius: 1%;
+    border: solid 1px var(--verde);
+    padding: 40px;
+    background: var(--verde);
+}
+
+#login, #cadastro {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: var(--branco);
+}
+
+#Alogin a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.hLogin, .hCadastro, .btorm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#login input {
+    height: 25px;
+    border-radius: 6px;
+    border: 0;
+}
+
+.CadeLogin {
+    border-radius: 10px;
+    width: 40%;
+    display: inline;
+    justify-content: center;
+}
+
+.CadeLogin:hover {
+    background: var(--branco);
+    transition: background 1.5s;
+    color: var(--preto);
+}
+
+
+#cadastro input {
+    height: 25px;
+    border: 0;
+    display: flex;
+    justify-content: end;
+}
+/* --- */
+
+
+/* Primeira media query */
+@media (min-width: 700px) {
+
+    #topo {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 80px;
+        z-index: 1000;
+    }
+
+    #topo div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card_cardapio {
+        margin: 100px 30px 50px 35px;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    h1 {
+        margin-left: 3%;
+        margin-top: 5px;
+        width: 150px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    #conteudo {
+        margin-top: 85px;
+    }
+
+    .assinatura {
+        height: 20px;
+    }
+
+    .assinatura p {
+        padding-top: 1%;
+    }
+
+    .card-conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+/* --- */
+
+
+/* Segunda media query */
+@media (min-width:850px){
+
+    #card_cardapio {
+        margin: 100px 30px 50px 35px;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+} 
+/* --- */
+
+
+/* Terceira media query */
+@media (min-width: 900px){
+    
+    nav{
+        width: 700px;
+    }
+
+    #conteudo {
+        width: 900px;
+    }   
+    
+    #formulario {
+        margin: 150px 0 50px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    #card_cardapio {
+        margin: 100px 30px 50px 35px;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .ccf {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 15px;
+        margin: 0 0 15px 0;
+    }
+
+    .rodapeC {
+        margin: 50px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .redesSociais {
+        display: none;
+    }
+}
+/* --- */

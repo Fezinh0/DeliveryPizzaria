@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Painel Administrativo - Pizzaria JSX</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+	<link rel="icon" href="/image/favicon.png"/>
+	<script src="https://code.jquery.com/jquery-3.1.1.1.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet"/>
+    
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <header>
+		<nav class="navbar navbar-inverse navbar navbar-dark bg-dark fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="btn btn-dark navbar-toggle pull-left">
+						<i class="oi oi-menu"></i>
+					</button>				
+					<a class="navbar-brand navbar-toggle pull-left" href="#">Painel Administrativo - Pizzaria JSX</a>
+				</div>
+        <a class="btn btn-primary" th:href="@{/}">
+          <i class="bi bi-pencil-square"></i> Voltar ao site</a>
+
+			</div>
+		</nav>
+	</header>
+
+  <div class="layout-main">
+    <aside>
+      <nav class="sidebar  sidebar-open">
+          <ul class="nav nav-pills">
+              <li class="nav-item"><a class="nav-link " href="/homeadministrativo"> <i
+                      class="oi oi-home"></i> <span>Home</span>
+              </a></li>
+          </ul>
+
+          <ul class="nav nav-pills">
+              <li class="nav-item"><span class="nav-link active">Clientes</span></li>
+              <li class="nav-item"><a class="nav-link"
+                                      href="/cadastrar"> <i class="oi oi-plus"></i>
+                  <span>Cadastrar </span>
+              </a></li>
+              <li class="nav-item"><a class="nav-link"
+                                      href="/lista"> <i class="oi oi-spreadsheet"></i>
+                  <span>Listar </span>
+              </a></li>
+          </ul>
+    <ul class="nav nav-pills">
+              <li class="nav-item"><span class="nav-link active">Pizzas</span></li>
+              <li class="nav-item"><a class="nav-link"
+                                      href="/cadastrarpizza"> <i class="oi oi-plus"></i>
+                  <span>Cadastrar</span>
+              </a></li>
+              <li class="nav-item"><a class="nav-link"
+                                      href="/listapizza"> <i class="oi oi-spreadsheet"></i>
+                  <span>Listar</span>
+              </a></li>
+          </ul>
+    <ul class="nav nav-pills">
+              <li class="nav-item"><span class="nav-link active">Bebidas</span></li>
+              <li class="nav-item"><a class="nav-link"
+                                      href="/cadastrarbebida"> <i class="oi oi-plus"></i>
+                  <span>Cadastrar</span>
+              </a></li>
+              <li class="nav-item"><a class="nav-link"
+                                      href="/listabebida"> <i class="oi oi-spreadsheet"></i>
+                  <span>Listar</span>
+              </a></li>
+          </ul>
+    <ul class="nav nav-pills">
+              <li class="nav-item"><span class="nav-link active">Pedidos</span></li>
+              <li class="nav-item"><a class="nav-link"
+                                      href="/cardapio"> <i class="oi oi-plus"></i>
+                  <span>Inserir novo pedido</span>
+              </a></li>
+              <li class="nav-item"><a class="nav-link"
+                                      href="/listapedido"> <i class="oi oi-spreadsheet"></i>
+                  <span>Acompanhar pedidos</span>
+              </a></li>
+          </ul>
+      </nav>
+  </aside>
+
+    <div class="Login-Form">
+      <div class="container">
+        <div class="main-div">
+          <div class="texto-header">
+            <h2>Login</h2>
+            <p>Insira suas credenciais para efetuar o Login no Sistema.</p>
+          </div>
+
+          <form method="POST" action="/logaradm" th:object="${adm}">
+
+            <div class="form-group">
+              <input type="text" th:field="${adm.admuser}" class="form-control" placeholder="Digite seu login de administrador..." id="admuser">
+            </div>
+            <div class="form-group">
+              <input type="password" th:field="${adm.admsenha}" class="form-control" placeholder="Digite sua senha de administrador..." id="admsenha">
+            </div>
+            <div th:if="${msg != null}" th:text="${msg}" class="alert alert-danger" role="alert"></div>
+            <button type="submit" class="btn btn-primary btn-sm">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/webjars/jquery/jquery.min.js"></script>
+<script src="/webjars/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+    
+	$(document).ready(function(){
+	    $(".navbar-toggle").click(function(){
+	        $(".sidebar").toggleClass("sidebar-open");
+	    })
+	});
+</script>
+</body>
+
+</html>

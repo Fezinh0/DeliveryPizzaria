@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria JSX</title>
+    <meta name="description" content="Seja bem-vindo(a) a Pizzaria jsx a melhor pizza italiana da região">
+
+    <!-- CSS slick-->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+    <!-- CSS -->
+    <link rel="Stylesheet" type="text/css" href="assets/css/estilo.css">
+    <link rel="Stylesheet" type="text/css" href="assets/CSS1/style.css">
+
+    <!-- Icone barra de navegação  -->
+    <link rel="icon" href="assets/imagem/logotipo.png">
+
+    <!-- Icones box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="topo">
+
+        <div>
+            <!-- Logo -->
+            <h1>
+                <a href="/"><img src="assets/imagem/logotipo.png" alt="Logotipo"></a>
+            </h1>
+
+            <!-- Menu -->
+            <nav>
+                <a href="/" tabindex="1">Home</a>
+                <a href="/cardapio" tabindex="2">Cardápio</a>
+                <a href="/carrinho" tabindex="3"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAABUtJREFUeF7tnD9sHEUUxr/Pnjm7QCkIFCCM+C8hRGNIOqRQIZIiZaAhjihAdEiQDglKoKFAQqIgTgNyiwhCVCClAcU0SEgUBgwBIQQUIBKzO/FDc1kkK/bdztzN7szczbY3+96b77dv9u3b2SPKEVUBRvVenKMAiHwRFAAFQGQFIrsvGVAARFYgsvuSAQVAZAUiuy8ZUABEViCy+5IBqQOQuhbHGC8D+BEiH3AweNvxnLkf1poBHgD2inkZIic5GHw19wq3CNAVAOv2bwDHqfXFAmG0Al0CAER+gNYPkKwLhIMV6BaA9SnyIgeDtwqAWACAX6HUCklTIOxXoPsMsD7Jp6jURgEQCwBwkVo/VgBMAMBFNKnrswBeHzt2d/chLi1942Jvnsa0LkEuYojIYRjzM4ClkePJd6nUcy725mlMEADDYqeqzoN8Zox4V6DUbST/mieB2+YaEsBRkF+MdVhK0n3yBAMwzIK63gSwOmYZ2sLi4v0kXftLbRdQ9r+HBVBVZ0C+16LKE9T60+yVCzSBsABElmDMbwAOjYnvQ2p9MlD82ZsJCqBZht4E8NIYZXah1F0kf8pevQATCA/g6tW7odR3AWLL04TINhYWLmBx8RWSf7ZNIjiAJgsu2FZ0m/OZ/p20BccxkvZF1ei6pAsRxJgTEPmoC9tZ2STfoVIv9A5gmAVVtQ3yzqwECx/s79T61jgA6vplAG+En1NGFsktKnVfHAAiN8OYPzKSq4tQP6bWJ6IAaJahdZCnu5hZFjbJNSp1PiaAIyC/zEKs8EH+A6VuIbkTDUBTko7vD4WfeBoWyXUqdaYtmE6eA/Y6lapaA3muLZAZ/P0Ytf68bV7dA3DrD7XFmdfv5PdU6h6XoDsH0CxDthy1Zem8HK9S69dcJtsPAJEVGLNt90e4BJX5GIFSd5D8xWUevQkidT0v/aHPqPXjLuLbMf0BMOY4RCyE2T4cav+9AvQHQISoa9sfWplhAk61fxQAzc14tvtDjrV/PAAih5pXlqP3D+WdHk61fzQAwyww5hxE1vLW+YDoPWr/uACqahWkbU/M2uFc+0cF0NwLbIPuyAwR8Kr94wMw5jRE1mcIgFftHx/A9f6Q3cx7eCYgeNb+0QE0y9Cs9Ie8a/80AMxKf2iC2j8JAE0W2K0rY9+ZZrBEedf+6QDIvT80Ye2fDoD8+0MT1f7JAGiWIbuR127oze2YuPZPC0C+/aGJa/+kAGTbH5qi9k8PQH79oalq/+QANPcC+4Hf0SxuBFPW/mkCyKs/NFXtnyaAXPpDAWr/JAE0y5D9uwP7twcpH1PX/ukCSL8/FKT2TxbAMAuq6n2QTyeaAp9Q6ydDxtbbthTXoEXkJhhj35g96HpOT+Ou4Nq1VS4vfxvSX3IAhlkgcjuMeX6YCSJjP/EJKcZIW/aLR5FnXXY7+8aTJADfSeQ8vgCITK8AKAAiKxDZfdIZINe/NT4F4OFGp68BbFDrTt4f9O3PzilJALKzcy8WFjZAPnLgBSqyid3dU1xe3gpxAfftL+kHseZh7NJI8f+PXmSTg8GjQQBUVa/+kgbQLAOuf3FwdtrlqG9/N14wyS1BUteXABy89Oy/3Dep9VRZ0Le/HAD8C2DguLRU1Hqqbw2krnv1VwDcoEABsF+QsgQ5pn8nw/q+KfbtL/klqJShnVzXfkb7fjDq21/SzwF7g+u7NdC3v2RbEX75kvfo5B7E8pbTP/oCwF+zoGcUAEHl9DdWAPhrFvSMAiConP7GCgB/zYKeUQAEldPfWAHgr1nQMwqAoHL6GysA/DULekYBEFROf2P/AUwmBn/g0fqNAAAAAElFTkSuQmCC" /></a>
+                <a href="/acompanharpedido" tabindex="4"><img
+                        src="data:image/png;base64,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" /></a>
+            </nav>
+            <div th:if="${clientecookie}" class="align2">
+                <a class="redirectBt" th:href="@{/logout}">
+                    <i></i> LogOut</a>
+                </div>
+            </div>
+    </header>
+
+    <!-- Body -->
+    <main id="conteudo">
+        
+        <!-- Banner slick -->
+        <div class="destaque" id="destaque">
+
+            <div>
+                <img class="img_destaque" src="assets/imagem/restd.jpg" alt="imagen: Restaurante pizza italiana Casa 1">
+            </div>
+
+            <div>
+                <img class="img_destaque" src="assets/imagem/restt.jpg" alt="Imagen: Restaurante pizza italiana Casa 2">
+            </div>
+
+            <div>
+                <img class="img_destaque" src="assets/imagem/restu.jpg" alt="Imagen: Restaurante pizza italiana Casa 3">
+            </div>
+        
+        </div>
+
+        <!-- Mini cards -->
+        <div class="ccf">
+ 
+                <div class="cardmini">
+                    <h4>Pizzas</h4>
+                    <img src="assets/imagem/Pizzas/pizzaia.jpg" alt="">
+                    <a href="/cardapio"><section class="redirect"><button class="redirectBt">Cardapio</button></section></a>
+                </div>
+                
+                <div class="cardmini">
+                    <h4>Sobremesas</h4>
+                    <img src="assets/imagem/Sobremesas/cannolli.jpg" alt="">
+                    <a href="/cardapio"><section class="redirect"><button class="redirectBt">Cardapio</button></section></a>
+                </div>
+        </div>
+    </main>
+   
+    <!-- Footer -->
+    <footer class="rodape">
+
+        <div class="rodapeC">
+
+             <!-- Logo -->
+            <div id="logo-rodape">
+                <a href="/"><img src="assets/imagem/logotipo.png" alt="Logotipo"></a>
+            </div>
+
+             <!-- Icons Redes sociais -->
+            <div class="redesSociais">
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-instagram-alt'></i>
+            </div>
+
+             <!-- Menu footer -->
+            <address class="menu-rodape">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/cardapio">Cardapio</a></li>
+                    <li><a href="/carrinho">Pedidos</a></li>
+                </ul>
+            </address>
+
+             <!-- Infos -->
+            <address class="menu-rodape">
+                <ul>
+                    <li>Fale Conosco</li>
+                    <li>Termos de Uso</li>
+                    <li>Politicas de Privacidade</li>
+                </ul>
+            </address>
+
+             <!-- Info e endereço -->
+            <address class="enderecoNot">
+                <p> JSX PIZZARIA, Av. Marquês de São Vicente, 200 - Água Branca, São Paulo/SP - 01139-000</p>
+                <br>
+                <p>S.A.C: Duvidas, reclamações, sugestões e / ou elogios envie um e-mail para : <br>
+                    jsxpizzaria@jsx.com.br </p>
+            </address>
+            <div class="align">
+
+                <aside class="boxLogADM">
+               <a class="redirectBt" th:href="@{/loginadm}">
+               <i class="redirectBt"></i> Login Administrativo</a>
+                </aside>
+           
+               </div>
+
+             <!-- Assinatura -->
+            <div class="assinatura">
+                <span>Copyright © 2023 by JSX Pizzaria | All Rights Reserved</span>
+            </div>
+    </footer>
+
+
+    <script src="assets/js/jquery-3.7.1.js"></script>
+    <script src="slick/slick.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+        $('#destaque').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots:true,
+            arrow:false
+        });
+        });
+    </script>
+</body>
+
+</html>
