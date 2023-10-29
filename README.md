@@ -1,6 +1,6 @@
 <div align="center">
   <h1>DeliveryPizzaria</h1>
-  <h2 ><a href="https://2962-2804-431-c7df-e6ef-69e7-a769-dfbe-6c75.ngrok-free.app/">Link Aplicação</a></h2>
+  <h2 ><a href="https://2962-2804-431-c7df-e6ef-69e7-a769-dfbe-6c75.ngrok-free.app/" target="_blank">Link Aplicação</a></h2>
 </div>
 
 <div>
